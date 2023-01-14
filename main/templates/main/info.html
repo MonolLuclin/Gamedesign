@@ -1,0 +1,12 @@
+{% extends 'main/mainpage.html' %}
+{% load static %}
+{% block content %}
+    <div style="text-align: center">
+         {{ infopage.text|safe }}
+        <div style="margin: 30px 10% 0 10%; box-shadow: 0 0 10px #d1f7ff,0 0 20px #05d9e8,0 0 30px #05d9e8,0 0 40px #05d9e8;">
+            <img style="margin: 0" width="48%" src="{{ infopage.graph_left.url }}"/>
+            <img style="margin: 0" width="48%" src="{{ infopage.graph_right.url }}"/>
+        </div>
+    </div>
+
+{% endblock %}

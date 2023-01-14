@@ -1,0 +1,18 @@
+{% extends 'main/mainpage.html' %}
+{% load static %}
+{% block content %}
+    <div>
+
+        <div>
+            <div class="left">
+                <img class="home_img" style="float: right" src="{{ homepage.image_1.url }}" alt="homepage_img">
+                {{ homepage.text_1|safe }}
+                <img class="home_img" style="float: left; margin: 40px 40px 40px 0" src="{{ homepage.image_2.url }}"
+                     alt="homepage_img">
+                {{ homepage.text_2|safe }}
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}
